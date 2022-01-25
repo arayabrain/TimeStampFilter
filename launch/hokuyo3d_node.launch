@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- run pointcloud_to_laserscan node -->
+    <node pkg="TimeStampFilter" type="TimeStampFilter_node" name="hokuyo3d_TimeStampFilter">
+        <remap from="cloud_in" to="hokuyo3d/hokuyo_cloud2"/>
+        <rosparam>
+            prefix: hokuyo/
+        </rosparam>
+    </node>
+
+</launch>

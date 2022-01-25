@@ -1,0 +1,9 @@
+<library path="lib/libTimeStampFilter">
+  <class name="TimeStampFilter/TimeStampFilter_nodelet"
+	 type="TimeStampFilter::TimeStampFilterNodelet"
+	 base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet to convert sensor_msgs/PointCloud2 to sensor_msgs/LaserScans.
+    </description>
+  </class>
+</library>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>TimeStampFilter</name>
+    <version>1.4.1</version>
+    <description>Filtering 3D Point Cloud and imu data.</description>
+
+    <maintainer email="paul@bovbel.com">Keita Matsumoto</maintainer>
+    <author>Keita Matsumoto</author>
+
+    <license>BSD</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>laser_geometry</depend>
+    <depend>message_filters</depend>
+    <depend>nodelet</depend>
+    <depend>roscpp</depend>
+    <depend>sensor_msgs</depend>
+    <depend>tf2</depend>
+    <depend>tf2_ros</depend>
+    <depend>tf2_sensor_msgs</depend>
+
+    <test_depend>roslint</test_depend>
+
+    <export>
+        <nodelet plugin="${prefix}/nodelets.xml"/>
+    </export>
+</package>
